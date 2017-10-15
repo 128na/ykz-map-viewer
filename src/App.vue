@@ -32,7 +32,7 @@ header {
     <div class="map-area">
       <div v-for="(map, index) in maps" class="map-content">
         <ykz-map
-          v-show="index <= current"
+          v-show="shouldShow(index)"
           :src="map.url"
           :resizable="resizable"
         />
@@ -92,6 +92,10 @@ export default {
     toggleResizable() {
       this.resizable = !this.resizable
     },
+    // 指定画像と1つ前の画像のみを表示する
+    shouldShow(index) {
+      return index === this.current || index === this.current - 1
+    }
   },
   computed: {
     resizeMode() {
