@@ -74,10 +74,14 @@ export default {
       }
     },
     autoDec() {
-      this.timer(this.dec)
+      if (!this.timer) {
+        this.timer(this.dec)
+      }
     },
     autInc() {
-      this.timer(this.inc)
+      if (!this.timer) {
+        this.timer(this.inc)
+      }
     },
     timer(func) {
       this.timerId = setInterval(func, this.interval)
