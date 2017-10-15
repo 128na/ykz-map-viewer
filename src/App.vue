@@ -74,12 +74,12 @@ export default {
       }
     },
     autoDec() {
-      if (!this.timer) {
+      if (!this.timerId) {
         this.timer(this.dec)
       }
     },
     autInc() {
-      if (!this.timer) {
+      if (!this.timerId) {
         this.timer(this.inc)
       }
     },
