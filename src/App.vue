@@ -88,6 +88,7 @@ export default {
     },
     clear() {
       clearInterval(this.timerId)
+      this.timerId = null
     },
     toggleResizable() {
       this.resizable = !this.resizable
