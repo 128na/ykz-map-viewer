@@ -1,5 +1,5 @@
 <style scoped>
-  .fade-enter-resizable, .fade-leave-active {
+  .fade-enter-active, .fade-leave-active {
     transition: opacity 1s
   }
   .fade-enter, .fade-leave-to {
