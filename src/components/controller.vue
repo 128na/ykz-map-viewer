@@ -1,12 +1,3 @@
-<style scoped>
-  .controller {
-    padding: 8px;
-  }
-  .info {
-    margin-right: 16px;
-    margin-bottom: 8px;
-  }
-</style>
 <template>
   <div class="controller">
     <div class="info"><slot name="info"></slot></div>
@@ -19,3 +10,13 @@ export default {
 
 }
 </script>
+
+<style scoped>
+  .controller {
+    padding: 8px;
+  }
+  .info {
+    margin-right: 16px;
+    margin-bottom: 8px;
+  }
+</style>

@@ -21,12 +21,12 @@ header {
     <ykz-controller>
       <span slot="info">{{ currentData }}</span>
       <span slot="actions">
-        <button class="btn btn-default" @click="autoDec"><i class="fa fa-angle-double-left"></i></button>
-        <button class="btn btn-default" @click="dec"><i class="fa fa-angle-left"></i></button>
-        <button class="btn btn-default" @click="clear"><i class="fa fa-stop"></i></button>
-        <button class="btn btn-default" @click="inc"><i class="fa fa-angle-right"></i></button>
-        <button class="btn btn-default" @click="autInc"><i class="fa fa-angle-double-right"></i></button>
-        <button class="btn btn-default" @click="toggleResizable">{{ resizeMode }}</button>
+        <sui-button primary @click="autoDec" icon="angle double left"></sui-button>
+        <sui-button primary @click="dec" icon="angle left"></sui-button>
+        <sui-button primary @click="clear" icon="stop"></sui-button>
+        <sui-button primary @click="inc" icon="angle right"></sui-button>
+        <sui-button primary @click="autInc" icon="angle double right"></sui-button>
+        <sui-button primary @click="toggleResizable">{{ resizeMode }}</sui-button>
       </span>
     </ykz-controller>
     <div class="map-area">
